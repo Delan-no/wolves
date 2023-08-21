@@ -1,0 +1,7 @@
+<div [ngClass]="{'darkmode': darkParent, 'whitemode': !darkParent}">
+    <app-header (starte)="sendToChild($event)" (dark)="sendDarkMode($event)"></app-header>
+    <div class="contain">
+        <app-main [getStarted]="sendedStart" class="response" [darkmode]="darkParent"></app-main>
+    </div>
+</div>
+<router-outlet></router-outlet>

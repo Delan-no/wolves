@@ -1,0 +1,19 @@
+<header class="header" [@fadeInAnimation] [ngClass]="{'darkmode': darkmode, 'whitemode': !darkmode}">
+<button [ngClass]="{'fa-solid fa-moon wcolor': darkmode, 'fas fa-sun dcolor': !darkmode}" (click)="darker()" class="btn"></button>
+    <nav [@fadeInAnimation] class="container-fluid">
+            <div class="logo">
+                <a href="../header/header.component.html"><img src="../../assets/logo/logo12.png"></a>
+            </div>
+    </nav>
+
+    <div class="contenue">
+        <div class="block">
+            <h1 [@fadeInAnimation]>Génère ton site Vitrine en un clic</h1>
+            <p class="texte2" [@fadeInAnimation]>{{newSentences}}</p>
+        </div>
+        <div class="button">
+            <a (click)="started(start)" href="#choice">Commencer</a>
+        </div>
+        <!-- <img src="../../assets/images/4912168.png" alt="" width="100%" height="50vh"> -->
+    </div>
+</header>
